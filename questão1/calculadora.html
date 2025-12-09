@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de serviços</title>
+</head>
+<body>
+    <h1>Calculadora de Serviço - INBEC</h1>
+    <form id="formServico">
+    <select id="tipoServico">
+        <option value="">Selecione...</option>
+        <option value="interpretacao">Interpretação</option>
+        <option value="traducao">Tradução</option>
+    </select>
+
+    <div id="areaInterpretacao" style="display:none;">
+        <input id="nomeEvento" placeholder="Nome do Evento">
+        <select id="tipoEvento">
+            <option value="juridico">Jurídico</option>
+            <option value="educacao">Educação</option>
+            <option value="artistico">Artístico/Cultural</option>
+            <option value="video">Vídeo Conferência</option>
+        </select>
+        <input id="tempoEvento" placeholder="Tempo em minutos" type="number">
+        <select id="gravado">
+            <option value="nao">Não ficará gravado</option>
+            <option value="sim">Ficará gravado</option>
+        </select>
+        <input id="endereco" placeholder="Endereço (opcional)">
+    </div>
+
+    <div id="areaTraducao" style="display:none;">
+        <input id="tituloMaterial" placeholder="Título">
+        <select id="tipoMaterial">
+            <option value="videobook">VideoBook</option>
+            <option value="tv">Programa de TV</option>
+            <option value="propaganda">Propaganda</option>
+            <option value="filme">Filme</option>
+            <option value="documentario">Documentário</option>
+        </select>
+        <input id="tempoVideo" type="number" placeholder="Tempo em minutos">
+        <select id="legendagem">
+            <option value="nao">Sem legendagem</option>
+            <option value="sim">Com legendagem</option>
+        </select>
+        <select id="edicao">
+            <option value="simples">Edição simples</option>
+            <option value="completa">Edição completa</option>
+        </select>
+        <textarea id="descricao" placeholder="Descrição opcional"></textarea>
+    </div>
+
+    <button type="button" onclick="calcular()">Calcular</button>
+</form>
+
+<div id="resultado"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

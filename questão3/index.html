@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Clima</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Clima</h1>
+        
+        <div class="search-container">
+            <input type="text" id="cidade" placeholder="Digite o nome da cidade..." onkeypress="if(event.key === 'Enter') buscarClima()">
+            <button onclick="buscarClima()">Buscar</button>
+        </div>
+
+        <div id="clima" class="resultado"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

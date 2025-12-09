@@ -1,0 +1,64 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5b95c2;
+            color: #000000;
+        }
+        .faixa {
+            position: relative;
+            padding: 60px;
+            text-align: center;
+        }
+
+        .faixa::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4; /* transparência da imagem */
+            z-index: -1; /* coloca atrás do título */
+        }
+
+        .faixa h1 {
+            position: relative;
+            color: white;
+        }
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #funcoes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #funcoes label {
+            display: block;
+            width: 200px;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        #resultadoPlanos {
+            margin: 20px auto 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            width: 320px;
+            background: #f7f7f7;
+        }
+        #resultadoPlanos h3, p {
+            color: black;
+        }
+      

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de plano de saúde </title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header class="faixa">
+        <h2 class="">Simulador de Planos de Saúde</h2>
+    </header>
+    <div id="funcoes">
+        <label>Idade:</label><br>
+        <input type="number" id="idade" min="0" step="1" placeholder="0"><br>
+
+        <label>Peso (kg):</label><br>
+        <input type="number" id="peso" min="0" step="0.1" placeholder="0.0"><br>
+
+        <label>Altura (m):</label><br>
+        <input type="number" step="0.01" id="altura" min="0.01" placeholder="0.00"><br>
+
+        <button onclick="calcularPlanos()">Calcular</button>
+    </div>
+    <div id="resultadoPlanos"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
